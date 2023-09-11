@@ -1,0 +1,23 @@
+spring:
+
+  batch:
+    jdbc:
+      initialize-schema: always
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/poc_db
+    driver-class-name: org.postgresql.Driver
+    username: admin
+    password: password
+
+  flyway:
+    enabled: true
+
+  jooq:
+    sql-dialect: postgres
+
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
